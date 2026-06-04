@@ -42,9 +42,9 @@ Applies Physics-Informed Neural Networks (PINNs) to the non-dimensional wildfire
 
 The PDE system derived from the non-dimensional form of Mandel et al. 2008:
 
-$$\frac{\partial \tilde{T}}{\partial \tilde{t}} = w_1\frac{\partial^2 \tilde{T}}{\partial \tilde{x}^2} + w_2\frac{\partial^2 \tilde{T}}{\partial \tilde{y}^2} + \tilde{S}\e^{-1/\tilde{T}} - \lambda\\tilde{T}$$
+$$\frac{\partial \tilde{T}}{\partial \tilde{t}} = w_1\frac{\partial^2 \tilde{T}}{\partial \tilde{x}^2} + w_2\frac{\partial^2 \tilde{T}}{\partial \tilde{y}^2} + \tilde{S}\,e^{-1/\tilde{T}} - \lambda\\tilde{T}$$
 
-$$\frac{\partial \tilde{S}}{\partial \tilde{t}} = -\beta\\tilde{S}\e^{-1/\tilde{T}}$$
+$$\frac{\partial \tilde{S}}{\partial \tilde{t}} = -\beta\\tilde{S}\,e^{-1/\tilde{T}}$$
 
 where:
 - `T̃` — non-dimensional temperature
