@@ -18,7 +18,7 @@ Applies Physics-Informed Neural Networks (PINNs) to the non-dimensional wildfire
 │   ├── create_fire_dataset_2D.py # Generate synthetic dataset from the solver
 │   ├── pinn_2D.py                # Forward PINN training & evaluation
 │   ├── pinn_inverse_2D.py        # Inverse PINN (estimates λ, β, w1, w2)
-│   └── main_2D.py                # Entry point
+│   └── main_2D.py                # 3D fire simulation results
 │
 ├── Fire_PINN_Multi_variable/     # Multi-Variable PINN (per-quadrant λ_i, β_i)
 │   ├── create_fire_dataset_multi_variable.py
@@ -40,7 +40,7 @@ Applies Physics-Informed Neural Networks (PINNs) to the non-dimensional wildfire
 
 ## The Model
 
-The PDE system (non-dimensional form, Mandel et al. 2008):
+The PDE system derived from the non-dimensional form of Mandel et al. 2008:
 
 $$\frac{\partial \tilde{T}}{\partial \tilde{t}} = w_1\frac{\partial^2 \tilde{T}}{\partial \tilde{x}^2} + w_2\frac{\partial^2 \tilde{T}}{\partial \tilde{y}^2} + \tilde{S}\,e^{-1/\tilde{T}} - \lambda\,\tilde{T}$$
 
