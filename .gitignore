@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.claude/
+*.csv
+*.pth
+troy_fire_area_data/.venv/
